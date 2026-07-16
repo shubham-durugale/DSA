@@ -1,0 +1,6 @@
+class Solution(object):
+    def plusOne(self, digits):
+        s = "".join(map(str, digits))
+        s=int(s)+1
+        arr = list(map(int, str(s)))
+        return arr
