@@ -1,0 +1,11 @@
+class Solution(object):
+    def majorityElement(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        frq={}
+        r=set(nums)
+        for i in r:
+            if nums.count(i) >= (len(nums)/2)+1:
+                return i
